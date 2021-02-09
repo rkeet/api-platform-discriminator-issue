@@ -1,0 +1,7 @@
+resources:
+  App\Entity\AbstractInput:
+    collectionOperations: []
+    itemOperations:
+      get:
+        normalization_context:
+          groups: []

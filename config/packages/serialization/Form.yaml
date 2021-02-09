@@ -1,0 +1,8 @@
+App\Entity\Form:
+  attributes:
+    anothers:
+      groups:
+        - form-item
+        - form-list
+        - form-write
+        - form-summary

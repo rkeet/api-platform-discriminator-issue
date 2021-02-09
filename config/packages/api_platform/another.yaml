@@ -1,0 +1,27 @@
+resources:
+  App\Entity\Another:
+    collectionOperations:
+      get:
+        normalization_context:
+          groups:
+            - another-list
+      post:
+        normalization_context:
+          groups:
+            - another-item
+        denormalization_context:
+          groups:
+            - another-write
+    itemOperations:
+      get:
+        normalization_context:
+          groups:
+            - another-item
+      put:
+        denormalization_context:
+          groups:
+            - another-write
+        normalization_context:
+          groups:
+            - another-item
+      delete: ~

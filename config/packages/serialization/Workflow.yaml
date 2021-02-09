@@ -1,0 +1,8 @@
+Linku\Workflow\CoreBundle\Entity\Workflow\Workflow:
+  attributes:
+    someVar:
+      groups:
+        - workflow-item
+        - workflow-write
+        - workflow-list
+        - workflow-summary

@@ -1,0 +1,24 @@
+App\Entity\Input:
+  discriminator_map:
+    type_property: discr
+    mapping:
+      workflow: 'App\Entity\Workflow'
+      form: 'App\Entity\Form'
+  attributes:
+    id:
+      groups:
+        - input-item
+        - input-list
+        - input-write
+        - input-summary
+    name:
+      groups:
+        - input-item
+        - input-list
+        - input-write
+        - input-summary
+    discr:
+      groups:
+        - input-item
+        - input-list
+        - input-summary

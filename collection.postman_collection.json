@@ -1,0 +1,1728 @@
+{
+	"info": {
+		"_postman_id": "f10b6bae-5b7d-427f-bd12-cb5520c19ed6",
+		"name": "collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "anothers",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Retrieves a Another resource.",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/anothers/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"anothers",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/anothers/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"anothers",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Another resource response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/anothers/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"anothers",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/ld+json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"@context\": \"officia enim Ut dolore\",\n \"@id\": \"elit\",\n \"@type\": \"laborum cillum commodo\",\n \"id\": -61119534,\n \"name\": \"aliqua in Duis consectetur\",\n \"form\": \"enim eiusmod proident quis minim\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Replaces the Another resource.",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"form\": \"<iri-reference>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/anothers/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"anothers",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"name\": \"<string>\",\n    \"form\": \"<iri-reference>\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/anothers/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"anothers",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Invalid input",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"name\": \"<string>\",\n    \"form\": \"<iri-reference>\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/anothers/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"anothers",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Another resource updated",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"name\": \"<string>\",\n    \"form\": \"<iri-reference>\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/anothers/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"anothers",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/ld+json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"@context\": \"officia enim Ut dolore\",\n \"@id\": \"elit\",\n \"@type\": \"laborum cillum commodo\",\n \"id\": -61119534,\n \"name\": \"aliqua in Duis consectetur\",\n \"form\": \"enim eiusmod proident quis minim\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Removes the Another resource.",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/anothers/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"anothers",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/anothers/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"anothers",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Another resource deleted",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/anothers/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"anothers",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Retrieves the collection of Another resources.",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/anothers?page=1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"anothers"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"description": "The collection page number"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Another collection response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/anothers?page=1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"anothers"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/ld+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"hydra:member\": [\n  {\n   \"@id\": \"cupidatat laboris\",\n   \"@type\": \"ex veniam occaecat anim\",\n   \"id\": 39230434,\n   \"name\": \"in\",\n   \"form\": \"voluptate elit proident\"\n  },\n  {\n   \"@id\": \"dolor quis Duis dolore\",\n   \"@type\": \"officia commodo veniam incididunt\",\n   \"id\": -66106836,\n   \"name\": \"incididunt dolor\",\n   \"form\": \"commodo\"\n  }\n ],\n \"hydra:totalItems\": 36121578,\n \"hydra:view\": {\n  \"@id\": \"sed sit consequat veniam \",\n  \"@type\": \"laborum ut\",\n  \"hydra:first\": \"esse consequat\",\n  \"hydra:last\": \"aliquip Excepteur dolor aliqua\",\n  \"hydra:next\": \"mollit minim cupidatat\"\n },\n \"hydra:search\": {\n  \"@type\": \"anim culpa fugiat\",\n  \"hydra:template\": \"labore ut\",\n  \"hydra:variableRepresentation\": \"sit adipisicing\",\n  \"hydra:mapping\": [\n   {\n    \"@type\": \"enim labore\",\n    \"variable\": \"minim nostrud Ut nisi\",\n    \"property\": \"dolore reprehenderit cupidatat\",\n    \"required\": true\n   },\n   {\n    \"@type\": \"in nisi dolor\",\n    \"variable\": \"nisi dolore eiusmod consequat Excepteu\",\n    \"property\": \"ea commodo\",\n    \"required\": false\n   }\n  ]\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "Creates a Another resource.",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"form\": \"<iri-reference>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/anothers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"anothers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Another resource created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"form\": \"<iri-reference>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/anothers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"anothers"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/ld+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"@context\": \"officia enim Ut dolore\",\n \"@id\": \"elit\",\n \"@type\": \"laborum cillum commodo\",\n \"id\": -61119534,\n \"name\": \"aliqua in Duis consectetur\",\n \"form\": \"enim eiusmod proident quis minim\"\n}"
+								},
+								{
+									"name": "Resource not found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"form\": \"<iri-reference>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/anothers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"anothers"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Invalid input",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"form\": \"<iri-reference>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/anothers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"anothers"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "forms",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Retrieves a Form resource.",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/forms/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"forms",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Form resource response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/forms/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"forms",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/ld+json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"@context\": \"fugiat ut id Excepteur\",\n \"@id\": \"commodo tempor quis veniam qui\",\n \"@type\": \"nisi veniam culpa\",\n \"anothers\": [\n  \"exercitation minim\",\n  \"reprehenderit\"\n ]\n}"
+										},
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/forms/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"forms",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Replaces the Form resource.",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"anothers\": [\n        \"<iri-reference>\",\n        \"<iri-reference>\"\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/forms/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"forms",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Invalid input",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"anothers\": [\n        \"<iri-reference>\",\n        \"<iri-reference>\"\n    ]\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/forms/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"forms",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Form resource updated",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"anothers\": [\n        \"<iri-reference>\",\n        \"<iri-reference>\"\n    ]\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/forms/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"forms",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/ld+json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"@context\": \"fugiat ut id Excepteur\",\n \"@id\": \"commodo tempor quis veniam qui\",\n \"@type\": \"nisi veniam culpa\",\n \"anothers\": [\n  \"exercitation minim\",\n  \"reprehenderit\"\n ]\n}"
+										},
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"anothers\": [\n        \"<iri-reference>\",\n        \"<iri-reference>\"\n    ]\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/forms/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"forms",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Removes the Form resource.",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/forms/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"forms",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Form resource deleted",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/forms/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"forms",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/forms/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"forms",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Retrieves the collection of Form resources.",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/forms?page=1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"forms"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"description": "The collection page number"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Form collection response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/forms?page=1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"forms"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/ld+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"hydra:member\": [\n  {\n   \"@id\": \"Ut\",\n   \"@type\": \"cillum est elit\",\n   \"anothers\": [\n    \"irure ex\",\n    \"amet sunt\"\n   ]\n  },\n  {\n   \"@id\": \"pariatur magna culpa\",\n   \"@type\": \"est sunt\",\n   \"anothers\": [\n    \"sint tempor aliqua in\",\n    \"anim dolore ut voluptate dolor\"\n   ]\n  }\n ],\n \"hydra:totalItems\": 54294012,\n \"hydra:view\": {\n  \"@id\": \"dolor cillum proident molli\",\n  \"@type\": \"consectetur ut\",\n  \"hydra:first\": \"quis laborum tempor mollit\",\n  \"hydra:last\": \"in\",\n  \"hydra:next\": \"eu ipsum\"\n },\n \"hydra:search\": {\n  \"@type\": \"qui pariatur velit occaecat enim\",\n  \"hydra:template\": \"anim in esse non\",\n  \"hydra:variableRepresentation\": \"dolor adipisicing est veniam velit\",\n  \"hydra:mapping\": [\n   {\n    \"@type\": \"esse officia eu sint velit\",\n    \"variable\": \"do Excepteur\",\n    \"property\": \"enim aute nostrud\",\n    \"required\": false\n   },\n   {\n    \"@type\": \"Ut est\",\n    \"variable\": \"velit amet dolor non deserunt\",\n    \"property\": \"Excepteur mollit\",\n    \"required\": true\n   }\n  ]\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "Creates a Form resource.",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"anothers\": [\n        \"<iri-reference>\",\n        \"<iri-reference>\"\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/forms",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"forms"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Invalid input",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"anothers\": [\n        \"<iri-reference>\",\n        \"<iri-reference>\"\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/forms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"forms"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Resource not found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"anothers\": [\n        \"<iri-reference>\",\n        \"<iri-reference>\"\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/forms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"forms"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Form resource created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"anothers\": [\n        \"<iri-reference>\",\n        \"<iri-reference>\"\n    ]\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/forms",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"forms"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/ld+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"@context\": \"fugiat ut id Excepteur\",\n \"@id\": \"commodo tempor quis veniam qui\",\n \"@type\": \"nisi veniam culpa\",\n \"anothers\": [\n  \"exercitation minim\",\n  \"reprehenderit\"\n ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "workflows",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Retrieves a Workflow resource.",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/workflows/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"workflows",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Workflow resource response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/workflows/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"workflows",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/ld+json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"@context\": \"dolor in veniam velit\",\n \"@id\": \"deserunt\",\n \"@type\": \"ut cillum\"\n}"
+										},
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/workflows/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"workflows",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Replaces the Workflow resource.",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "\"<object>\""
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/workflows/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"workflows",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"<object>\""
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/workflows/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"workflows",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Invalid input",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"<object>\""
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/workflows/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"workflows",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Workflow resource updated",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "\"<object>\""
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/workflows/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"workflows",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/ld+json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"@context\": \"dolor in veniam velit\",\n \"@id\": \"deserunt\",\n \"@type\": \"ut cillum\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Removes the Workflow resource.",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/workflows/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"workflows",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Workflow resource deleted",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/workflows/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"workflows",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Resource not found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/workflows/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"workflows",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Retrieves the collection of Workflow resources.",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/workflows?page=1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"workflows"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"description": "The collection page number"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Workflow collection response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/workflows?page=1",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"workflows"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/ld+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"hydra:member\": [\n  {\n   \"@id\": \"pariatur exercitation consequat fugiat\",\n   \"@type\": \"esse dolor minim Duis\"\n  },\n  {\n   \"@id\": \"aute incididunt in in\",\n   \"@type\": \"deserunt Excepteur et occaecat nisi\"\n  }\n ],\n \"hydra:totalItems\": 27459628,\n \"hydra:view\": {\n  \"@id\": \"irure amet esse\",\n  \"@type\": \"Ut aliqua voluptate enim\",\n  \"hydra:first\": \"dolor irure ipsum sunt\",\n  \"hydra:last\": \"ad labore tempor nostrud\",\n  \"hydra:next\": \"proident laborum reprehenderit\"\n },\n \"hydra:search\": {\n  \"@type\": \"aute consequat cillum eiusmod\",\n  \"hydra:template\": \"laboris Excepteur quis aliqua\",\n  \"hydra:variableRepresentation\": \"ex Excepteur\",\n  \"hydra:mapping\": [\n   {\n    \"@type\": \"culpa in\",\n    \"variable\": \"dolor minim non ullamco\",\n    \"property\": \"in\",\n    \"required\": false\n   },\n   {\n    \"@type\": \"cillum aliquip\",\n    \"variable\": \"in deserunt\",\n    \"property\": \"aute Duis\",\n    \"required\": true\n   }\n  ]\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "Creates a Workflow resource.",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<object>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/workflows",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"workflows"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Resource not found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"<object>\""
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/workflows",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"workflows"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Invalid input",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"<object>\""
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/workflows",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"workflows"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Workflow resource created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"<object>\""
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/workflows",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"workflows"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/ld+json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"@context\": \"dolor in veniam velit\",\n \"@id\": \"deserunt\",\n \"@type\": \"ut cillum\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Retrieves a AbstractInput resource.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/abstract_inputs/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"abstract_inputs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "<string>",
+									"type": "string",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Resource not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/abstract_inputs/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"abstract_inputs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "AbstractInput resource response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/abstract_inputs/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"abstract_inputs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/ld+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"@context\": \"dolor in veniam velit\",\n \"@id\": \"deserunt\",\n \"@type\": \"ut cillum\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}

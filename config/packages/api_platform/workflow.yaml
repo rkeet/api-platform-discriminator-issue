@@ -1,0 +1,35 @@
+resources:
+  App\Entity\Workflow:
+    collectionOperations:
+      get:
+        normalization_context:
+          groups:
+            - input-list
+            - workflow-list
+      post:
+        denormalization_context:
+          groups:
+            - input-write
+            - workflow-write
+        normalization_context:
+          groups:
+            - workflow-item
+            - input-summary
+    itemOperations:
+      get:
+        normalization_context:
+          groups:
+            - input-item
+            - workflow-item
+            - form-summary
+            - another-summary
+      put:
+        denormalization_context:
+          groups:
+            - input-write
+            - workflow-write
+        normalization_context:
+          groups:
+            - input-item
+            - workflow-item
+      delete: ~

@@ -1,0 +1,33 @@
+resources:
+  App\Entity\Form:
+    collectionOperations:
+      get:
+        normalization_context:
+          groups:
+            - input-summary
+            - form-list
+      post:
+        normalization_context:
+          groups:
+            - input-write
+            - form-item
+        denormalization_context:
+          groups:
+            - input-summary
+            - form-write
+    itemOperations:
+      get:
+        normalization_context:
+          groups:
+            - input-summary
+            - form-item
+      put:
+        denormalization_context:
+          groups:
+            - input-write
+            - form-write
+        normalization_context:
+          groups:
+            - input-item
+            - form-item
+      delete: ~

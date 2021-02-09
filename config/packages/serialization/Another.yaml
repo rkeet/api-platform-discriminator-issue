@@ -1,0 +1,20 @@
+App\Entity\Another:
+  attributes:
+    id:
+      groups:
+        - another-item
+        - another-list
+        - another-write
+        - another-summary
+    name:
+      groups:
+        - another-item
+        - another-list
+        - another-write
+        - another-summary
+    form:
+      groups:
+        - another-item
+        - another-list
+        - another-write
+        - another-summary
