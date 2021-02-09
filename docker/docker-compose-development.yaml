@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - "mysql_data:/var/lib/mysql:delegated"
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-discriminator}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-discriminator}
+      - MYSQL_USER=${MYSQL_USER:-discriminator}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-discriminator}
+      - TZ=Europe/Amsterdam
+    ports:
+      - "${MYSQL_PORT:-30016}:3306"
+    networks:
+      - discriminator
+networks:
+  discriminator:
+    external: true
+volumes:
+  mysql_data:
