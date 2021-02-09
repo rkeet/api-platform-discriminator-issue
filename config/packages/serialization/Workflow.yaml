@@ -1,4 +1,4 @@
-Linku\Workflow\CoreBundle\Entity\Workflow\Workflow:
+App\Entity\Workflow:
   attributes:
     someVar:
       groups:
